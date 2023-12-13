@@ -1,0 +1,64 @@
+<!-- appointments/templates/appointments/appointment_details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment_Details</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            display: block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            color: #258cd1;
+        }
+    </style> -->
+</head>
+<body>
+
+    <div class="details">
+        <h2>Appointment Details</h2>
+        <p><strong>Patient Name:</strong> {{ appointment.patient_name }}</p>
+        <p><strong>Doctor:</strong> {{ appointment.doctor }}</p>
+        <p><strong>Date:</strong> {{ appointment.date }}</p>
+        <p><strong>Time:</strong> {{ appointment.time }}</p>
+        <p><strong>Mobile Number:</strong> {{ appointment.mobile_number }}</p>
+        <p><strong>Message:</strong> {{ appointment.message }}</p>
+    
+        <a href="#">Go back to Home</a>
+    
+</body>
+</html>
